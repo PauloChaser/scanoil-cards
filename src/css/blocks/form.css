@@ -1,0 +1,139 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__subtitle {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.15;
+    color: #333333;
+
+    margin: 0 0 25px;
+}
+
+.form__inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form__input:not(:last-child) {
+    margin-right: 30px;
+}
+
+.form__checkboxWrapper {
+    margin-bottom: 40px;
+}
+
+.form__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form__footerButton {
+
+}
+
+.form__footerButton:first-child {
+    margin-right: 20px;
+}
+
+.form__footerInput {
+    margin-left: auto;
+    margin-right: 20px;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.form__messageError {
+    /*position: absolute;*/
+    /*bottom: -40px;*/
+    margin-top: 15px;
+    color: red;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.15;
+}
+
+.form__messageSuccess {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__messageSuccessTitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.15;
+    color: #333333;
+    text-align: center;
+    margin: 0 0 25px;
+}
+
+.form__messageSuccessSubtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.15;
+    color: rgba(51, 51, 51, 0.6);
+    text-align: center;
+    margin: 0 0 25px;
+    max-width: 80%;
+}
+
+.form__messageSuccessSubtitle span {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 680px) {
+    .form__subtitle {
+        font-size: 14px;
+
+        margin: 0 0 20px;
+    }
+
+    .form__inputs {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .form__input:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .form__checkboxWrapper {
+        margin-bottom: 30px;
+    }
+
+    .form__footer {
+        flex-direction: column-reverse;
+    }
+
+    .form__footerButton {
+        width: 100%;
+    }
+
+    .form__footerButton:first-child {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .form__footerInput {
+        margin-right: 0;
+        margin-bottom: 20px;
+        min-width: 0;
+        max-width: 100%;
+        order: 1;
+    }
+
+    .form__messageError {
+        font-size: 16px;
+    }
+
+}

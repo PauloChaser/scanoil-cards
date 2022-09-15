@@ -1,0 +1,84 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #E5E5E5A0;
+}
+
+.footer__leftSide {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.footer__logo {
+    margin-bottom: 32px;
+}
+
+.footer__logoIcon {
+    width: 211px;
+    height: 27px;
+}
+
+.footer__phoneLink {
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+
+    margin-bottom: 10px;
+
+    transition: border-bottom 200ms ease;
+}
+
+.footer__phoneLink:hover {
+    border-bottom: 1px solid #333333;
+}
+
+.footer__company {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.footer__address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.footer__links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: #333333;
+    text-decoration: none;
+    border-bottom: 1px solid #828282;
+
+    transition: all 200ms ease;
+}
+
+.footer__link:hover {
+    border-bottom-color: black;
+    color: black;
+}
+
+@media screen and (max-width: 1020px) {
+
+}
+
+
+@media screen and (max-width: 650px) {
+    .footer__links {
+        display: none;
+    }
+}

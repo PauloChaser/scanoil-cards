@@ -1,0 +1,119 @@
+.gasStationMap {
+    margin-bottom: 93px;
+}
+
+.gasStationMap__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gasStationMap__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin: 0 0 53px;
+}
+
+.gasStationMap__infoItems {
+    margin-bottom: 40px;
+}
+
+.gasStationMap__infoItem {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.gasStationMap__infoItem span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+
+    color: #279A2F;
+}
+
+.gasStationMap__map {
+    margin-bottom: 70px;
+
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+
+.gasStationMap__mapZoom {
+    position: absolute;
+    right: 22px;
+    bottom: 30px;
+
+    width: 45px;
+    height: 90px;
+    border-radius: 22px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.gasStationMap__mapZoom::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 1px;
+    width: 100%;
+    background-color: #E0E0E0;
+}
+
+.gasStationMap__mapBtn {
+    width: 45px;
+    height: 45px;
+    border-radius: 22px 22px 0 0;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.gasStationMap__mapBtn--minus {
+    width: 45px;
+    height: 45px;
+    border-radius: 0 0 22px 22px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.gasStationMap__mapIconPlus,
+.gasStationMap__mapIconMinus {
+    width: 15px;
+    height: 3px;
+    background-color: #828282;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translateX(-50%);
+}
+
+.gasStationMap__mapIconPlus::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    width: 3px;
+    height: 15px;
+    background-color: #828282;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.gasStationMap__mapIconMinus {
+    top: auto;
+    bottom: 50%;
+}

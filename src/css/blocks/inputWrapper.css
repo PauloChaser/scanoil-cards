@@ -1,0 +1,133 @@
+.inputWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.inputWrapper--hidden {
+    display: none;
+}
+
+.inputWrapper__input {
+    padding: 34px 45px 13px 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #333333;
+    width: 100%;
+
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 3px;
+}
+
+.inputWrapper__input[disabled] {
+    background-color: rgba(236, 236, 236, 0.53);
+}
+
+.inputWrapper__input::placeholder {
+   opacity: 0;
+    display: none;
+}
+
+.inputWrapper__label {
+    position: absolute;
+    top: 27px;
+    left: 19px;
+    width: calc(100% - 38px);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #333333;
+
+    transition: all 200ms ease;
+}
+
+.inputWrapper__input:focus + .inputWrapper__label,
+.inputWrapper__input:not(:placeholder-shown) + .inputWrapper__label {
+    top: 12px;
+    font-size: 14px;
+}
+
+
+.inputWrapper__errorText {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+
+    opacity: 0;
+    color: #EB5757;
+}
+
+.inputWrapper__icon {
+    position: absolute;
+    right: 17px;
+    top: 26px;
+    width: 22px;
+    height: 22px;
+}
+
+.inputWrapper__input[data-valid="false"] {
+    border-color: #EB5757;
+}
+
+.inputWrapper__input[data-valid="false"] ~ .inputWrapper__errorText {
+    display: flex;
+    opacity: 1;
+}
+
+.inputWrapper__input[data-valid="false"] ~ .inputWrapper__icon--invalid {
+    display: inline-block;
+}
+
+.inputWrapper__input[data-valid="true"] {
+    border-color: #279A2F;
+}
+
+.inputWrapper__input[data-valid="true"] ~ .inputWrapper__icon--valid {
+    display: inline-block;
+}
+
+.inputWrapper__icon--invalid {
+    display: none;
+}
+
+.inputWrapper__icon--valid {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+
+    .inputWrapper__input {
+        padding: 33px 18px 15px;
+        font-size: 16px;
+        line-height: 1.15;
+    }
+
+
+    .inputWrapper__label {
+        font-size: 16px;
+    }
+
+    .inputWrapper__input:focus + .inputWrapper__label,
+    .inputWrapper__input:not(:placeholder-shown) + .inputWrapper__label {
+        font-size: 12px;
+    }
+
+    .inputWrapper__errorText {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .inputWrapper__label {
+        font-size: 15px;
+    }
+}

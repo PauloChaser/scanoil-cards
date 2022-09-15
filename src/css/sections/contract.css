@@ -1,0 +1,40 @@
+.contract {
+    margin-bottom: 90px;
+}
+
+.contract__wrapper {
+    width: 100%;
+}
+
+.contract__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.15;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.contract__step {
+    display: none;
+}
+
+.contract__step--active {
+    display: inline-block;
+}
+
+@media screen and (max-width: 960px) {
+    .contract {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    /*.contract {*/
+    /*    margin-bottom: 55px;*/
+    /*}*/
+
+    .contract__title {
+        font-size: 24px;
+        margin: 0 0 25px;
+    }
+}

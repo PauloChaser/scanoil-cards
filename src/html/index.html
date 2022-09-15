@@ -1,0 +1,431 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>СканОйл Карт топливная программа</title>
+</head>
+<body>
+<header class="container header js-header">
+    <div class="container__row">
+        <div class="header__top">
+
+            <div class="header__logo">
+                <a href="/index.html">
+                    <svg class="header__logoIcon">
+                        <use href="./spritemap.svg#icon-logo"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__phone">
+                <a class="header__phoneLink" href="tel:88001000832">8 800 100-08-32</a>
+            </div>
+            <a href="#" class="header__login">
+                <svg class="header__loginIcon">
+                    <use href="./spritemap.svg#icon-personal-account"/>
+                </svg>
+            </a>
+
+            <div class="header__menuButton  js-menu-button">
+                <div class="header__menuButtonLine"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container__separator"></div>
+    <div class="container__row">
+        <div class="header__menu  js-header-menu">
+            <nav class="header__menuNav">
+                <ul class="header__menuList ">
+                    <li class="header__menuLinkItem header__menuLinkItem--mob">
+                        <a href="#" class="header__menuLink js-nav-link">Войти в личный кабинет</a>
+                    </li>
+                    <li class="header__menuLinkItem">
+                        <a href="#advantages" class="header__menuLink js-nav-link">Преимущества программы</a>
+                    </li>
+                    <li class="header__menuLinkItem">
+                        <a href="#gasStationMap" class="header__menuLink js-nav-link">Карта АЗС</a>
+                    </li>
+                    <li class="header__menuLinkItem">
+                        <a href="#questions" class="header__menuLink js-nav-link">Вопросы и ответы</a>
+                    </li>
+                    <li class="header__menuLinkItem">
+                        <a href="#contract" class="header__menuLink js-nav-link">Присоединиться к программе</a>
+                    </li>
+                    <li class="header__menuLinkItem header__menuLinkItem--mob">
+                        <a href="#documents" class="header__menuLink js-nav-link">Документы</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</header>
+
+<section class="container banner">
+    <div class="container__row">
+        <div class="banner__wrapper">
+            <h2 class="banner__title">СканОйл Карт <br>топливная программа
+                <br><span>для юридических лиц и индивидуальных предпринимателей</span>
+            </h2>
+            <h2 class="banner__title banner__title--mob">СканОйл Карт <br>топливная программа
+                <br>для юридических лиц и ИП
+            </h2>
+            <h4 class="banner__text">Быстро. Удобно. Выгодно.</h4>
+            <a href="#contract" class="banner__buttonEnjoy button button--green js-nav-link">Присоединиться к программе</a>
+        </div>
+        <div class="banner__img">
+            <img class="banner__imgItem"
+                 src="img/banner-img.png"
+                 srcset="img/banner-img.png 1x,
+                                img/banner-img-retina.png 2x"
+                 alt="ScanOil Card">
+            <img class="banner__imgItem banner__imgItem--mob"
+                 src="img/banner-img-mob.png"
+                 srcset="img/banner-img-mob.png 1x,
+                                img/banner-img-mob-retina.png 2x"
+                 alt="ScanOil Card">
+        </div>
+    </div>
+</section>
+
+<section class="container advantages" id="advantages">
+    <div class="container__row">
+        <div class="advantages__wrapper">
+            <h2 class="advantages__title">Преимущества программы</h2>
+            <div class="advantages__items">
+                <div class="advantages__item">
+                    <h4 class="advantages__itemTitle js-advantage" data-container="advantage1">
+                        <svg class="advantages__itemTitleIcon">
+                            <use href="./spritemap.svg#icon-questions-open"/>
+                        </svg>Быстрый <br> &nbsp;простой старт
+                    </h4>
+                    <ul class="advantages__itemList" id="advantage1">
+                        <li class="advantages__itemListItem">Регистрация и выдача карты за 3 минуты на сайте</li>
+                        <li class="advantages__itemListItem">Моментальное выставление счета, акцепт оферты первым
+                            платежом
+                        </li>
+                        <li class="advantages__itemListItem">Получение топлива на АЗС сразу после оплаты счета</li>
+                    </ul>
+                    <div class="advantages__itemImg advantages__itemImg--fast">
+                        <img src="img/advantages-item-1.png"
+                             srcset="img/advantages-item-1.png 1x,
+                                    img/advantages-item-1-retina.png 2x"
+                             alt="Fast start">
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <h4 class="advantages__itemTitle js-advantage" data-container="advantage3">
+                        <svg class="advantages__itemTitleIcon">
+                            <use href="./spritemap.svg#icon-questions-open"/>
+                        </svg>
+                        Онлайн контроль за целевым использованием средств
+                    </h4>
+                    <ul class="advantages__itemList" id="advantage3">
+                        <li class="advantages__itemListItem">Минимизация рисков хищения топлива</li>
+                        <li class="advantages__itemListItem">Детализированные отчеты по заправкам водителей</li>
+                    </ul>
+                    <div class="advantages__itemImg advantages__itemImg--control">
+                        <img src="img/advantages-item-3.png"
+                             srcset="img/advantages-item-3.png 1x,
+                                    img/advantages-item-3-retina.png 2x"
+                             alt="Online control">
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <h4 class="advantages__itemTitle js-advantage" data-container="advantage4">
+                        <svg class="advantages__itemTitleIcon">
+                            <use href="./spritemap.svg#icon-questions-open"/>
+                        </svg>
+                        Онлайн управление потреблением топлива
+                    </h4>
+                    <ul class="advantages__itemList" id="advantage4">
+                        <li class="advantages__itemListItem">Управление лимитами и видами топлива</li>
+                        <li class="advantages__itemListItem">Управление географией потребления</li>
+                        <li class="advantages__itemListItem">Управление бюджетами</li>
+                        <li class="advantages__itemListItem">Блокировка и <br>разблокировка карты</li>
+                    </ul>
+                    <div class="advantages__itemImg">
+                        <img src="img/advantages-item-4.png"
+                             srcset="img/advantages-item-4.png 1x,
+                                    img/advantages-item-4-retina.png 2x"
+                             alt="Online management">
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <h4 class="advantages__itemTitle js-advantage" data-container="advantage5">
+                        <svg class="advantages__itemTitleIcon">
+                            <use href="./spritemap.svg#icon-questions-open"/>
+                        </svg>
+                        Оптимизация бухгалтерского учета
+                    </h4>
+                    <ul class="advantages__itemList" id="advantage5">
+                        <li class="advantages__itemListItem">Работа с единым поставщиком</li>
+                        <li class="advantages__itemListItem">Быстрая доставка отчетных документов</li>
+                        <li class="advantages__itemListItem">Отказ от чеков, наличных и авансовых отчетов</li>
+                    </ul>
+                    <div class="advantages__itemImg">
+                        <img src="img/advantages-item-5.png"
+                             srcset="img/advantages-item-5.png 1x,
+                                    img/advantages-item-5-retina.png 2x"
+                             alt="Accounting optimization">
+                    </div>
+                </div>
+
+            </div>
+            <div class="advantages__buttons">
+                <a href="#questions" class="advantages__button button button--white js-nav-link">Остались вопросы?</a>
+                <a href="#contract" class="advantages__button button button--green js-nav-link">Присоединиться к программе</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container gasStationMap" id="gasStationMap">
+    <div class="container__row">
+        <div class="gasStationMap__wrapper">
+            <h2 class="gasStationMap__title">Карта АЗС</h2>
+            <div class="gasStationMap__infoItems">
+                <div class="gasStationMap__infoItem"><span>3000 АЗС</span> для заправки через приложение</div>
+                <div class="gasStationMap__infoItem"><span>5000 АЗС</span> для заправки по пластиковым картам</div>
+            </div>
+            <div class="gasStationMap__map" id="map"></div>
+            <a href="#contract" class="gasStationMap__button button button--green js-nav-link">Присоединиться к программе</a>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="container questions" id="questions">
+    <div class="container__row ">
+        <div class="questions__wrapper">
+            <h2 class="questions__title">Вопросы и ответы</h2>
+            <div class="questions__items questions__items--notFull js-items-wrapper">
+
+            </div>
+            <a href="#" class="questions__button button button--white js-button-more">Загрузить еще</a>
+        </div>
+    </div>
+</section>
+
+<section class="container contract" id="contract">
+    <div class="container__row">
+        <div class="contract__wrapper js-forms">
+            <div class="contract__step contract__step--active js-step">
+                <h2 class="contract__title">Заключить договор</h2>
+                <form action="" method="post" class="form js-first-form"
+                      id="firstForm">
+                            <span class="form__subtitle">Сначала введите ИНН вашей организации и адрес электронной почты
+                                (на него будет отправлен код подтверждения)</span>
+                    <div class="form__inputs">
+                        <div class="form__input inputWrapper">
+                            <input type="text" class="inputWrapper__input js-input-inn" placeholder=" "
+                                   id="INN-input"
+                                   name="c-vat"
+                                   data-validation="inn">
+                            <label class="inputWrapper__label" for="INN-input">ИНН юридического лица или ИП</label>
+                            <span class="inputWrapper__errorText">Укажите ИНН</span>
+                            <svg class="inputWrapper__icon inputWrapper__icon--invalid">
+                                <use href="./spritemap.svg#icon-input-invalid"/>
+                            </svg>
+                            <svg class="inputWrapper__icon inputWrapper__icon--valid">
+                                <use href="./spritemap.svg#icon-input-valid"/>
+                            </svg>
+                        </div>
+                        <div class="form__input inputWrapper">
+                            <input type="text" class="inputWrapper__input js-input-email" placeholder="Адрес электронной почты"
+                                   id="email-input"
+                                   name="c-mail"
+                                   data-validation="email">
+                            <label class="inputWrapper__label" for="email-input">Адрес электронной почты</label>
+                            <span class="inputWrapper__errorText">Указан некорректный адрес электронной почты</span>
+                            <svg class="inputWrapper__icon inputWrapper__icon--invalid">
+                                <use href="./spritemap.svg#icon-input-invalid"/>
+                            </svg>
+                            <svg class="inputWrapper__icon inputWrapper__icon--valid">
+                                <use href="./spritemap.svg#icon-input-valid"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form__checkboxWrapper">
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__element js-privacy-policy-agree"
+                                   id="contact-checkbox"
+                                   name="c-terms-accepted"
+                                   value="1"
+                                   data-validation="checkbox">
+                            <label class="checkbox__label" for="contact-checkbox">
+                                Я ознакомился и согласен(-на) с <a href="#" class="checkbox__documentLink">политикой
+                                обработки персональных данных</a> и текстом
+                                <a href="#" class="checkbox__documentLink">договора оферты</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__footer">
+                        <input type="button" class="form__footerButton button button--white js-button-reset"
+                               value="Начать заново">
+                        <input type="button" class="form__footerButton button button--green js-button-continue"
+                               value="Продолжить" disabled="disabled">
+                    </div>
+                    <div class="form__messageError js-form-message"></div>
+                </form>
+            </div>
+            <div class="contract__step js-step">
+                <h2 class="contract__title">Заключить договор</h2>
+                <form action="" method="post" class="form js-second-form"
+                      id="secondForm">
+                           <span class="form__subtitle">Для заключения договора проверьте все данные в форме и введите код,
+                               отправленный вам по электронной почте</span>
+                    <div class="form__inputs">
+                        <input type="hidden" value=" " name="c-session" class="js-input-hidden">
+                        <div class="form__input inputWrapper">
+                            <input type="text" class="inputWrapper__input" placeholder="ИНН"
+                                   id="inputInn"
+
+                                   disabled=disabled>
+                            <label class="inputWrapper__label" for="inputInn">ИНН</label>
+                        </div>
+
+                        <div class="form__input inputWrapper">
+                            <input type="text" class="inputWrapper__input" placeholder="КПП"
+                                   id="inputKpp"
+
+                                   disabled=disabled>
+                            <label class="inputWrapper__label" for="inputKpp">КПП</label>
+                        </div>
+
+                        <div class="form__input inputWrapper">
+                            <input type="text" class="inputWrapper__input" placeholder="ОГРН"
+                                   id="inputOgrn"
+
+                                   disabled=disabled>
+                            <label class="inputWrapper__label" for="inputOgrn">ОГРН</label>
+                        </div>
+                    </div>
+                    <div class="form__inputs">
+                        <div class="form__input inputWrapper">
+                            <input type="text" class="inputWrapper__input" placeholder="Наименование"
+                                   id="inputCompanyName"
+
+                                   disabled=disabled>
+                            <label class="inputWrapper__label" for="inputCompanyName">Наименование</label>
+                        </div>
+
+                        <div class="form__input inputWrapper">
+                            <input type="text" class="inputWrapper__input" placeholder="Адрес электронной почты"
+                                   id="inputEmail"
+                                   disabled=disabled>
+                            <label class="inputWrapper__label" for="inputEmail">Адрес электронной почты</label>
+                        </div>
+                    </div>
+                    <div class="form__inputs">
+                        <div class="form__input inputWrapper">
+                            <input type="text" class="inputWrapper__input" placeholder="Юридический адрес"
+                                   id="inputLegalAddress"
+
+
+                                   disabled=disabled>
+                            <label class="inputWrapper__label" for="inputLegalAddress">Юридический адрес</label>
+                        </div>
+                    </div>
+                    <div class="form__footer">
+                        <input type="button" class="form__footerButton button button--white js-button-reset"
+                               value="Начать заново">
+                        <div class="form__footerInput inputWrapper">
+                            <input type="text" class="inputWrapper__input js-input-code" placeholder="Код из электронной почты"
+                                   id="inputCode"
+                                   name="c-mail-code"
+                                   data-validation="required"
+                                   maxlength="8">
+                            <label class="inputWrapper__label" for="inputCode">Код из электронной почты</label>
+                            <svg class="inputWrapper__icon inputWrapper__icon--invalid">
+                                <use href="./spritemap.svg#icon-input-invalid"/>
+                            </svg>
+                            <svg class="inputWrapper__icon inputWrapper__icon--valid">
+                                <use href="./spritemap.svg#icon-input-valid"/>
+                            </svg>
+                        </div>
+                        <input type="button" class="form__footerButton button button--green js-button-complete"
+                               disabled=disabled
+                               value="Завершить">
+                    </div>
+                    <div class="form__messageError js-form-message"></div>
+                </form>
+            </div>
+            <div class="contract__step  js-step">
+                <div class="form__messageSuccess">
+                    <h3 class="form__messageSuccessTitle js-third-step-header"></h3>
+                    <div class="form__messageSuccessSubtitle js-third-step-message">
+<!--                        Ваша заявка принята, ожидайте сообщения с дальнейшими-->
+<!--                        инструкциями по электронной почте на адрес-->
+<!--                        <span class="form__messageSuccessMail js-third-step-mail">k.konstantinopolsky@scanoil.ru</span>.-->
+                    </div>
+                    <input type="button" class="form__footerButton button button--green js-button-reset"
+                           value="Начать заново">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container documents" id="documents">
+    <div class="container__row">
+        <div class="documents__wrapper">
+            <h2 class="documents__title">Документы</h2>
+            <ul class="documents__links">
+                <li><a href="#" class="documents__link">Оферта</a></li>
+                <li><a href="#" class="documents__link">Тарифная политика</a></li>
+                <li><a href="#" class="documents__link">Условия использования сервиса Яндекс.Заправки</a></li>
+                <li><a href="#" class="documents__link">Инструкция по пользованию картами / виртуальными картами</a>
+                </li>
+                <li><a href="#" class="documents__link">Политика конфиденциальности и условия обработки персональных
+                    данных</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="container footer">
+    <div class="container__row container__row--alignCenter">
+        <!--        <div class="footer__wrapper">-->
+        <div class="footer__leftSide">
+            <div class="footer__logo">
+                <a href="/index.html">
+                    <svg class="footer__logoIcon">
+                        <use href="./spritemap.svg#icon-logo"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div><a class="footer__phoneLink" href="tel:88001000832">8 800 100-08-32</a></div>
+
+            <span class="footer__company">© 2020 ООО «СканОйл Смарт»</span>
+            <span class="footer__address">119607, г. Москва, Мичуринский проспект, д. 39</span>
+        </div>
+        <ul class="footer__links">
+            <li><a href="#" class="footer__link">Оферта</a></li>
+            <li><a href="#" class="footer__link">Тарифная политика</a></li>
+            <li><a href="#" class="footer__link">Условия использования сервиса Яндекс.Заправки</a></li>
+            <li><a href="#" class="footer__link">Инструкция по пользованию картами / виртуальными картами</a></li>
+            <li><a href="#" class="footer__link">Политика конфиденциальности и условия обработки персональных данных</a>
+            </li>
+
+        </ul>
+    </div>
+    <!--    </div>-->
+</footer>
+
+
+<section class="modals js-modals"></section>
+
+<section class="overlay js-overlay"></section>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=36c51f8a-8f93-4b74-95e6-7967a9e3a1da&lang=ru_RU"
+        type="text/javascript">
+</script>
+
+</body>
+</html>

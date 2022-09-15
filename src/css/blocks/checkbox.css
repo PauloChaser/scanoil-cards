@@ -1,0 +1,115 @@
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    position: relative;
+}
+
+.checkbox__element {
+    visibility: hidden;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    align-self: flex-start;
+
+    transition: opacity 200ms ease;
+}
+
+.checkbox__element:hover + .checkbox__label::before {
+    opacity: 0.7;
+}
+
+.checkbox__label {
+    padding-left: 13px;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    color: #C4C4C4;
+
+    align-self: flex-end;
+    cursor: pointer;
+    transition: color 200ms ease;
+}
+
+.checkbox__element + .checkbox__label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 18px;
+    height: 18px;
+
+    box-sizing: border-box;
+    border: 1px solid #C4C4C4;
+    border-radius: 3px;
+    visibility: visible;
+}
+
+.checkbox__element + .checkbox__label::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    height: 10px;
+    width: 13px;
+
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDEyIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik00LjUgOC4xMjVMMC43NSA0LjQwNUwxLjk0MjUgMy4yNUw0LjUgNS43NjI1TDEwLjA1NzUgMC4yNUwxMS4yNSAxLjQzNUw0LjUgOC4xMjVaIiBmaWxsPSIjMEYwRjBGIi8+Cjwvc3ZnPgo=");
+    background-repeat: no-repeat;
+    opacity: 0;
+    visibility: visible;
+
+    transition: opacity 200ms ease;
+}
+
+.checkbox__element:checked + .checkbox__label::after {
+    opacity: 1;
+}
+
+.checkbox__documentLink {
+    text-decoration: none;
+    border-bottom: 1px solid #C4C4C4;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: #C4C4C4;
+    transition: border-bottom-color 200ms ease, color 200ms ease;
+}
+
+.checkbox__documentLink:hover {
+    border-bottom: 1px solid #333333;
+    color: #333333;
+}
+
+.checkbox__element[data-valid="false"] + .checkbox__label::before {
+    border-color: red;
+}
+
+.checkbox__element[data-valid="true"] + .checkbox__label::before {
+    border-color: #279A2F;
+}
+
+@media screen and (max-width: 1020px) {
+    .checkbox__label {
+        font-size: 14px;
+    }
+
+    .checkbox__documentLink {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .checkbox__label {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .checkbox__label,
+    .checkbox__documentLink {
+        line-height: 1.4;
+    }
+}

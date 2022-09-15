@@ -1,0 +1,95 @@
+.input {
+    width: 100%;
+    height: 70px;
+
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 3px;
+
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.15;
+    color: #333333;
+
+    transition: border-color 0.2s ease-in-out;
+}
+
+.input:focus {
+    border-color: #279A2F;
+}
+
+.input label {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #828282;
+}
+
+.input::placeholder {
+    color: #BDBDBD;
+
+}
+
+
+input {
+    outline: none;
+}
+
+.input[type=number] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.input[type=time] {
+    -webkit-appearance: none;
+}
+
+.input[data-valid="false"] {
+    border-color: red !important;
+    transition: border 200ms ease;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input[type=date]::-webkit-calendar-picker-indicator,
+.input[type=date]::-webkit-datetime-edit,
+.input[type=date]::-webkit-datetime-edit-fields-wrapper,
+.input[type=date]::-webkit-datetime-edit-text,
+.input[type=date]::-webkit-datetime-edit-month-field,
+.input[type=date]::-webkit-datetime-edit-day-field,
+.input[type=date]::-webkit-datetime-edit-year-field,
+.input[type=date]::-webkit-inner-spin-button,
+.input[type=date]::-webkit-calendar-picker-indicator{
+    -webkit-appearance: none;
+    opacity: 0;
+}
+
+.input--choose {
+
+}
+
+.input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+@media screen and (max-width: 1020px) {
+    .input {
+        font-size: 14px;
+    }
+
+    .input label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+}

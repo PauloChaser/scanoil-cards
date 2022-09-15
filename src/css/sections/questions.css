@@ -1,0 +1,136 @@
+.questions {
+    margin-bottom: 63px;
+    justify-content: center;
+}
+
+.questions__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.questions__items {
+    width: 100%;
+    margin-bottom: 67px;
+}
+
+.questions__item {
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    border-bottom: 1px solid #C4C4C4;
+    padding-left: 80px;
+}
+
+.questions__items--notFull .questions__item:nth-child(n+6) {
+    display: none;
+}
+
+.questions__item:first-child {
+    border-top: 1px solid #C4C4C4;
+}
+
+.questions__itemHeading {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+
+    cursor: pointer;
+
+    transition: margin-bottom 0.35s ease-in-out;
+}
+
+.questions__itemHeading span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.questions__itemHeading--active {
+    margin-bottom: 50px;
+}
+
+.questions__itemHeadingOpenIcon {
+    margin-left: -55px;
+    padding-right: 29px;
+}
+
+.questions__itemHeadingOpenIcon svg {
+    width: 26px;
+    height: 13px;
+
+    transition: transform 200ms ease;
+}
+
+.questions__itemHeading--active .questions__itemHeadingOpenIcon svg {
+    transform: scale(-1);
+}
+
+.questions__itemAnswer {
+    display: none;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000000;
+
+    margin: 0;
+    padding: 0;
+
+    transition: height 0.35s ease-in-out;
+}
+
+.questions__itemAnswer--active {
+    display: flex;
+
+}
+
+.questions__button[disabled] {
+
+}
+
+@media screen and (max-width: 680px) {
+    .questions {
+        margin-bottom: 50px;
+    }
+
+    .questions__title {
+        font-size: 24px;
+        line-height: 1.15;
+        margin: 0 0 25px;
+    }
+
+    .questions__items {
+        margin-bottom: 40px;
+    }
+
+    .questions__item {
+        padding-left: 60px;
+    }
+
+    .questions__itemHeading span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.15;
+    }
+
+    .questions__itemHeading--active {
+        margin-bottom: 25px;
+    }
+
+    .questions__itemAnswer {
+        font-size: 14px;
+    }
+
+}

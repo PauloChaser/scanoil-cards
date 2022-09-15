@@ -1,0 +1,59 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "fonts.css";
+
+@import "blocks/container.css";
+@import "blocks/button.css";
+@import "blocks/input.css";
+@import "blocks/select.css";
+@import "blocks/checkbox.css";
+@import "blocks/arrows.css";
+@import "blocks/form.css";
+@import "blocks/overlay.css";
+@import "blocks/textarea.css";
+@import "blocks/inputWrapper.css";
+
+
+@import "sections/header.css";
+@import "sections/banner.css";
+@import "sections/advantages.css";
+@import "sections/gasStationMap.css";
+@import "sections/questions.css";
+
+@import "sections/documents.css";
+@import "sections/inputExamples.css";
+@import "sections/contract.css";
+
+@import "sections/footer.css";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #333333;
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+    line-height: 1.2;
+    --swiper-theme-color: #333333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}

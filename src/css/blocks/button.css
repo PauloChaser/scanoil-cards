@@ -1,0 +1,103 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 370px;
+    padding: 23px 0;
+    border-radius: 3px;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+
+    transition: all 200ms ease;
+}
+
+.button--green {
+    background-color: #279A2F;
+    border: 1px solid #279A2F;
+    color: #FFFFFF;
+}
+
+.button--green:hover,
+.button--green:active {
+    background-color: #FFFFFF;
+    border: 1px solid #279A2F;
+    color: #279A2F;
+}
+
+.button--white {
+    background-color: #FFFFFF;
+    border: 1px solid #279A2F;
+    color: #333333;
+}
+
+.button--white:hover,
+.button--white:active {
+    background-color: #279A2F;
+    border: 1px solid #279A2F;
+    color: #FFFFFF;
+}
+
+.button[disabled] {
+    background-color: #C4C4C4;
+    border-color: transparent;
+    color: #FFFFFF;
+    pointer-events: none;
+}
+
+.button[disabled]:hover {
+    cursor: default;
+    pointer-events: none;
+}
+
+.button[type=button] {
+    line-height: 1.095;
+}
+
+
+
+@media screen and (max-width: 1020px) {
+    .button {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .button--white,
+    .button--white:hover {
+        background-color: #FFFFFF;
+        border: 1px solid #279A2F;
+        color: #333333;
+    }
+
+    .button--white:active {
+        background-color: #279A2F;
+        border: 1px solid #279A2F;
+        color: #FFFFFF;
+    }
+
+    .button--green,
+    .button--green:hover {
+        background-color: #279A2F;
+        border: 1px solid #279A2F;
+        color: #FFFFFF;
+    }
+
+    .button--green:active {
+        background-color: #FFFFFF;
+        border: 1px solid #279A2F;
+        color: #279A2F;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,39 @@
+.textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+
+    padding: 15px 0;
+
+    color: #2B2B2B;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    resize: none;
+}
+
+
+.textarea label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #2B2B2B;
+
+}
+
+
+@media screen and (max-width: 1020px) {
+    .textarea {
+        font-size: 14px;
+    }
+
+    .textarea label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+}
