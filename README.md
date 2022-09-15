@@ -1,7 +1,7 @@
 # Вёрстка одностраничного сайта под программу топливных карт Scanoil
 
 
-![image](https://github.com/PauloChaser/zenit-shvabe/blob/master/scanoil.gif)
+![image](https://github.com/PauloChaser/scanoil-cards/blob/master/scanoil.gif)
 
 #### Используемые технологии:
 
@@ -27,8 +27,8 @@ open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args
 ```
 ##### Запуск проекта:
 ```
-git clone https://github.com/PauloChaser/scanoil-card
-cd scanoil-card
+git clone https://github.com/PauloChaser/scanoil-cards
+cd scanoil-cards
 npm install
 npm start
 ```
